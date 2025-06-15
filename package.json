@@ -1,0 +1,25 @@
+{
+  "name": "parabank-e2e-automation",
+  "version": "1.0.0",
+  "description": "Playwright E2E automation for ParaBank",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --config=./configs/playwright.config.js",
+    "test:ui": "npx playwright test tests/ui --config=./configs/playwright.config.js",
+    "test:ui:headed": "npx playwright test tests/ui --headed --config=./configs/playwright.config.js",
+    "test:api": "npx playwright test tests/api --config=./configs/playwright.config.js",
+    "test:headless": "npx playwright test --headless --config=./configs/playwright.config.js",
+    "test:headed": "npx playwright test --headed --config=./configs/playwright.config.js",
+    "test:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.x.x",
+    "dotenv": "^16.5.0"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.2.5"
+  }
+}
